@@ -15,11 +15,13 @@ class Gmm:
 	def set_features(self):
 		iris = load_iris()
 		features = iris.data
-		labels = iris.target
-		return features,labels
+		#labels = iris.target
+		#return features,labels
+		return features
 
 	def gmm(self):
-		X,_ = self.set_features()
+		#X,_ = self.set_features()
+		X = self.set_features()
 		clf = GaussianMixture(n_components = self.cat_num)
 		clf.fit(X)
 		pred = clf.predict(X)
