@@ -49,3 +49,4 @@ class Gmm:
 if __name__ == "__main__":
 	g = Gmm()
 	g.gmm()
+	
